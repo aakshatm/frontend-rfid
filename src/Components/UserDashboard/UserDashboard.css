@@ -1,0 +1,131 @@
+.dash-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(189, 189, 189, 0.8);
+}
+.dash-wrapper * {
+  margin: 2px;
+}
+.dash-container {
+  position: absolute;
+  width: 80vw;
+  height: 90vh;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2rem 2rem;
+  left: 50%;
+  transform: translate(-50%, 0%); 
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.dash-header {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+  background-color: rgba(98, 141, 214, 0.813);
+  overflow: hidden;
+  font-weight: 600;
+}
+.dash-header .close-btn {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 3rem;
+  background-color: red;
+  margin: 0;
+  border: none;
+  border-top-right-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+.dash-container hr {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.detail-section {
+  min-height: 30vh;
+  display: flex;
+}
+.dash-details {
+  flex-basis: 60%;
+}
+.dash-details span {
+  display: inline-block;
+  /* min-width: 10rem; */
+}
+.dash-details div {
+  display: flex;
+  justify-content: space-between;
+}
+.dash-details input, .dash-details select {
+  width : 180px;
+}
+ .dash-buttons {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.attendance-section {
+  height: 60%;
+  overflow-y : scroll;
+  overflow-x: hidden;
+}
+
+
+.attendance-section table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 5rem;
+}
+
+/* Style table header */
+.attendance-section th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style table rows */
+.attendance-section tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style table cells */
+.attendance-section td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+.attendance-section tr:hover {
+  background-color: #ddd;
+}
+
+.attendance-section td{
+  width : 33%;
+}
+.attendance-section #throughAdmin {
+  color:red;
+}
+
+@media screen and (width <= 680px) {
+  .detail-section {
+    flex-direction: column;
+  }
+  .dash-container {
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
